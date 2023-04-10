@@ -1,0 +1,10 @@
+.contact_info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+}
+
+.contact_option {
+    margin-top: 50px;
+}

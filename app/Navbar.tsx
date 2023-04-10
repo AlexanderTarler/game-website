@@ -6,10 +6,9 @@ import './globals.css';
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
-    { text: "Home", href: "/" },
-    { text: "About Us", href: "/about" },
-    { text: "Contact", href: "/contact" },
     { text: "Portfolio", href: "/portfolio" },
+    { text: "About", href: "/about" },
+    { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
     const [navActive, setNavActive] = useState<any>(null);

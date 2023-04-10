@@ -1,4 +1,4 @@
-import '../globals.css';
+import './about.css';
 
 import Navbar from '../Navbar';
 

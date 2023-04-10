@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { text } from 'stream/consumers';
-import '../globals.css';
+import './contact.css';
 import Navbar from '../Navbar';
 
 

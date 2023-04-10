@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 * {
     margin: 0;
@@ -6,41 +9,35 @@
     outline: none;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+
 }
+
+
 
 main {
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-left: 50px;
     align-items: center;
+    color: #e1ddea;
 }
 
-.about {
-    margin-top: 50px;
-    width: 300px;
-}
 
-.contact_info {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
 
-.contact_option {
-    margin-top: 50px;
-}
-
-.portfolio {
-    background-color: black;
-    height: 517px;
+.logo {
+    color: #564977;
+    font-size: 190%;
+    text-shadow: -3px 2px 0px silver;
 }
 
 .project {
-    color: rgb(200, 103, 249);
+    color: #e1ddea;
 }
 
 .project:hover {
+    color: #f1f1f1;
     font-size: xx-large;
-    color: rgb(224, 178, 247);
 }
 
 a {
@@ -59,7 +56,8 @@ nav {
     padding: 16px;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #e1ddea;
+    z-index: 100;
 }
 
 .nav__menu-bar {
@@ -72,7 +70,7 @@ nav {
 .nav__menu-bar div {
     width: 40px;
     height: 4px;
-    background-color: black;
+    background-color: #564977;
     border-radius: 2px;
 }
 
@@ -80,14 +78,14 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 60px;
+    top: 40px;
     width: 288px;
     row-gap: 24px;
     right: -288px;
     padding: 24px 16px;
     transition: all 0.2s;
     min-height: calc(100vh - 60px);
-    background-color: #f1f1f1;
+    background-color: #e1ddea;
 }
 
 .nav__menu-list.active {
