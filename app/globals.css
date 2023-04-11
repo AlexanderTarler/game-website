@@ -15,9 +15,8 @@
 
 
 main {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
-    /* justify-content: center; */
     margin-left: 50px;
     align-items: center;
     color: #e1ddea;

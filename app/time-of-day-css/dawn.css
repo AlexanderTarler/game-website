@@ -4,6 +4,7 @@ html {
 }
 
 #dawn_welcome {
+    margin-top: 50px;
     font-size: xx-large;
     color: #e1ddea;
     text-shadow: -4px 2px 2px rgb(2, 137, 200);
@@ -45,7 +46,7 @@ html {
     top: 50%;
     left: 50%;
     margin-left: -50%;
-    margin-top: -200px;
+    margin-top: -210px;
 }
 
 @keyframes sunrise {
@@ -64,7 +65,7 @@ html {
     }
 
     to {
-        background-color: rgb(2, 137, 200);
+        background-color: rgb(102, 207, 249);
     }
 }
 

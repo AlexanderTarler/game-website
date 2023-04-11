@@ -10,9 +10,9 @@ import { useEffect, useRef, useState } from "react";
 
 
 export default function CSSChanger() {
-    const [timeOfDay, setTimeOfDay] = useState('');
     const date = new Date();
-    const time = 6;
+    // const time = date.getHours();
+    const time = 20;
 
     if (time >= 5 && time < 9) {
         return (<>
@@ -80,17 +80,34 @@ export default function CSSChanger() {
             </span></>)
     } else {
         return (<>
-            <div className='night-background' id='bg-animation'>
-                <div id="night"></div>
-                <div id="night2"></div>
-                <div id="night3"></div>
-                <div id="night4"></div>
-            </div><span><main>
-                <h1 id='night_welcome'>
-                    <div className='default_text'>Where</div><div id='night_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='night_functionality'>functionality</div>
-                </h1>
-            </main>
-            </span></>)
+            <div className="wrapper">
+                <div className="star" id="star1">.</div>
+                <div className="star" id="star2">.</div>
+                <div className="star" id="star3">.</div>
+                <div className="star" id="star4">.</div>
+                <div className="star" id="star5">.</div>
+                <div className="moon"></div>
+                <div className="mountain"></div>
+                <div className="tree l1" id="tree1"></div>
+                <div className="tree l1" id="tree2"></div>
+                <div className="tree l1" id="tree3"></div>
+                <div className="tree l1" id="tree4"></div>
+                <div className="tree l2" id="tree5"></div>
+                <div className="tree l2" id="tree6"></div>
+                <div className="tree l2" id="tree7"></div>
+                <div className="tree l2" id="tree8"></div>
+                <div className="tree l3" id="tree9"></div>
+                <div className="tree l3" id="tree10"></div>
+                <div className="tree l3" id="tree11"></div>
+                <div className="tree l3" id="tree12"></div>
+                <span><main>
+                    <h1 id='night_welcome'>
+                        <div className='default_text'>Where</div><div id='night_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='night_functionality'>functionality</div>
+                    </h1>
+                </main>
+                </span>
+            </div></>)
+
     }
 }
 
