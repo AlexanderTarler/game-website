@@ -9,15 +9,21 @@ import CSSChanger from './RealTimeCSS';
 
 
 import Navbar from './Navbar';
+import { useState } from 'react';
 
 
 
 export default function Home() {
+  const [time, setTime] = useState(0);
 
   return (
     <>
       <Navbar />
-      <CSSChanger />
+      <button className='button-dawn' onClick={() => setTime(5)}>Dawn</button>
+      <button className='button-dawn' onClick={() => setTime(9)}>Day</button>
+      <button className='button-dawn' onClick={() => setTime(20)}>Dusk</button>
+      <button className='button-dawn' onClick={() => setTime(0)}>Night</button>
+      <CSSChanger time={time} />
     </>
   )
 }

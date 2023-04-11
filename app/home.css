@@ -1,6 +1,14 @@
 .default_text {
-
     font-size: 130%;
+}
+
+.button-dawn {
+    position: relative;
+    background: transparent;
+    color: gold;
+    border: none;
+    margin-left: 10px;
+    z-index: 200;
 }
 
 .full-wh {

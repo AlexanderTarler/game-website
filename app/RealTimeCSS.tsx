@@ -9,10 +9,10 @@ import { useEffect, useRef, useState } from "react";
 
 
 
-export default function CSSChanger() {
+export default function CSSChanger({ time }: any) {
     const date = new Date();
     // const time = date.getHours();
-    const time = 20;
+    // const time = 20;
 
     if (time >= 5 && time < 9) {
         return (<>

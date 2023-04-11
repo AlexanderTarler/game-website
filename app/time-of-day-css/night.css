@@ -3,7 +3,7 @@
 }
 
 #night_welcome {
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: xx-large;
     color: rgb(255, 255, 255);
     text-shadow: -2px 2px 2px gold;
@@ -26,9 +26,10 @@
 }
 
 .wrapper {
+    margin-top: -20px;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background: radial-gradient(circle at 50% 30%, #4f4f7a, #000);
 }
 
@@ -50,7 +51,7 @@
     height: 10rem;
     background: #888;
     border-radius: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, -20%);
     top: 80%;
     left: 50%;
     animation: rise 8s ease forwards;
