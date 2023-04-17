@@ -11,10 +11,12 @@ import CSSChanger from './RealTimeCSS';
 import Navbar from './Navbar';
 import { useState } from 'react';
 
-
+const date = new Date();
+const present = date.getHours();
 
 export default function Home() {
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(present);
+
 
   return (
     <>

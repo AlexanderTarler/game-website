@@ -1,13 +1,28 @@
-.night-background {
-    background-color: #0b0224;
+#background-wrap-night {
+    background: #4f4f7a;
+    color: #333;
+    font: 100% Arial, Sans Serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
+
+
 #night_welcome {
-    margin-top: 70px;
-    font-size: xx-large;
-    color: rgb(255, 255, 255);
-    text-shadow: -2px 2px 2px gold;
-    z-index: 100;
+    text-shadow: -2px 2px 2px rgb(186, 159, 2);
+    margin-top: 180px;
+    margin-left: -30px;
+    font-size: 120%;
+    color: #ffffff;
+    z-index: 2;
 }
 
 #night_creativity {
@@ -21,15 +36,15 @@
     margin-top: 50px;
     color: silver;
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 200%;
+    font-size: 130%;
     text-shadow: none;
 }
 
 .wrapper {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 100%;
     background: radial-gradient(circle at 50% 30%, #4f4f7a, #000);
 }
 
@@ -47,11 +62,11 @@
     position: absolute;
     /* width: 160px;
     height: 160px; */
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background: #888;
     border-radius: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, 10%);
     top: 80%;
     left: 50%;
     animation: rise 8s ease forwards;
@@ -62,8 +77,8 @@
     position: absolute;
     /* width: 130px;
     height: 130px; */
-    width: 8.125rem;
-    height: 8.125rem;
+    width: 6.125rem;
+    height: 6.125rem;
 
 
     background: #aaa;
@@ -77,8 +92,8 @@
 .moon::after {
     content: '';
     position: absolute;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 4.25rem;
+    height: 4.25rem;
     background: #fff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -218,4 +233,243 @@
 #star5 {
     top: 50%;
     left: 15%;
+}
+
+@media only screen and (min-width: 600px) {
+    #background-wrap-night {
+        background: #4f4f7a;
+        color: #333;
+        font: 100% Arial, Sans Serif;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: none;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+
+
+    #night_welcome {
+        text-shadow: -2px 2px 2px rgb(186, 159, 2);
+        margin-top: 153px;
+        margin-left: -30px;
+        font-size: xx-large;
+        color: #ffffff;
+        z-index: 2;
+    }
+
+    #night_creativity {
+        color: gold;
+        text-shadow: none;
+        font-family: 'Bungee Shade', sans-serif;
+        font-size: 200%;
+    }
+
+    #night_functionality {
+        margin-top: 50px;
+        color: silver;
+        font-family: 'Press Start 2P', sans-serif;
+        font-size: 200%;
+        text-shadow: none;
+    }
+
+    .wrapper {
+        /* margin-top: -20px; */
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 30%, #4f4f7a, #000);
+    }
+
+    @keyframes rise {
+        0% {
+            top: 50%;
+        }
+
+        100% {
+            top: 30%;
+        }
+    }
+
+    .moon {
+        position: absolute;
+        /* width: 160px;
+        height: 160px; */
+        width: 8rem;
+        height: 8rem;
+        background: #888;
+        border-radius: 50%;
+        transform: translate(-50%, 10%);
+        top: 80%;
+        left: 50%;
+        animation: rise 8s ease forwards;
+    }
+
+    .moon::before {
+        content: '';
+        position: absolute;
+        /* width: 130px;
+        height: 130px; */
+        width: 6.125rem;
+        height: 6.125rem;
+
+
+        background: #aaa;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+    }
+
+    .moon::after {
+        content: '';
+        position: absolute;
+        width: 4.25rem;
+        height: 4.25rem;
+        background: #fff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+    }
+
+    .mountain {
+        position: absolute;
+        border-bottom: 6.25rem solid #111;
+        border-left: 25vw solid transparent;
+        border-right: 25vw solid transparent;
+        bottom: 9.375rem;
+
+    }
+
+    .mountain::before {
+        content: '';
+        position: absolute;
+        border-bottom: 6.25rem solid #111;
+        border-left: 25vw solid transparent;
+        border-right: 25vw solid transparent;
+        transform: translate(50%) scale(1.5);
+    }
+
+
+    .tree {
+        position: absolute;
+        border-bottom: 6.25rem solid #222;
+        border-left: 3.125rem solid transparent;
+        border-right: 3.125rem solid transparent;
+        bottom: 9.375rem;
+        transform: scaleY(2.5);
+        left: 25%;
+    }
+
+    .tree::after {
+        content: '';
+        position: absolute;
+        width: 1.25rem;
+        height: 3.125rem;
+        background: #000;
+        top: 6.25rem;
+        left: -0.625rem;
+    }
+
+    #tree1 {
+        left: 0;
+    }
+
+    #tree2 {
+        left: 25%;
+    }
+
+    #tree3 {
+        left: 60%;
+    }
+
+    #tree4 {
+        left: 85%;
+    }
+
+    #tree5 {
+        left: 0%;
+    }
+
+    #tree6 {
+        left: 25%;
+    }
+
+    #tree7 {
+        left: 60%;
+    }
+
+    #tree8 {
+        left: 85%;
+    }
+
+    #tree9 {
+        left: 0%;
+    }
+
+    #tree10 {
+        left: 25%;
+    }
+
+    #tree11 {
+        left: 60%;
+    }
+
+    #tree12 {
+        left: 85%;
+    }
+
+    .l1 {
+        border-bottom: 6.25rem solid #555;
+    }
+
+    .l2 {
+        transform: scaleY(2.3);
+        bottom: 6.25rem;
+        border-bottom: 6.25rem solid #333;
+    }
+
+    .l3 {
+        transform: scaleY(1.3);
+        bottom: 3.125rem;
+        border-bottom: 6.25rem solid #111;
+    }
+
+    .star {
+        position: absolute;
+        color: white;
+    }
+
+    #star1 {
+        top: 10%;
+        left: 20%;
+    }
+
+    #star2 {
+        top: 40%;
+        left: 65%;
+    }
+
+    #star3 {
+        top: 30%;
+        left: 78%;
+    }
+
+    #star4 {
+        top: 15%;
+        left: 34%;
+    }
+
+    #star5 {
+        top: 50%;
+        left: 15%;
+    }
 }
