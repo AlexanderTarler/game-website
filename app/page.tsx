@@ -1,11 +1,11 @@
 'use client'
 import './globals.css';
-import './home.css';
 import './time-of-day-css/dusk.css';
 import './time-of-day-css/night.css';
 import './time-of-day-css/dawn.css';
 import './time-of-day-css/day.css';
 import CSSChanger from './RealTimeCSS';
+import SceneryChanger from './Scenery';
 
 
 import Navbar from './Navbar';
@@ -21,10 +21,13 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <button className='button-dawn' onClick={() => setTime(5)}>Dawn</button>
-      <button className='button-dawn' onClick={() => setTime(9)}>Day</button>
-      <button className='button-dawn' onClick={() => setTime(20)}>Dusk</button>
-      <button className='button-dawn' onClick={() => setTime(0)}>Night</button>
+      <SceneryChanger setTime={setTime} />
+      <span><main>
+        <h1 id='welcome'>
+          <div className='default_text'>Where</div><div id='day_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='day_functionality'>functionality</div>
+        </h1>
+      </main>
+      </span>
       <CSSChanger time={time} />
     </>
   )

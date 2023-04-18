@@ -1,4 +1,12 @@
 .portfolio {
-    background-color: #564977;
-    height: 517px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+}
+
+.project_item {
+    margin-top: 50px;
 }

@@ -1,8 +1,10 @@
 .contact_info {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    color: #f1f1f1;
+    justify-content: center;
+    align-content: center;
+    color: #101010;
 }
 
 .contact_option {

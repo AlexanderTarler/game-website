@@ -1,10 +1,8 @@
 'use client'
-import './home.css';
 import './time-of-day-css/night.css';
 import './time-of-day-css/dawn.css';
 import './time-of-day-css/day.css';
 import './time-of-day-css/dusk.css';
-import { useEffect, useRef, useState } from "react";
 
 
 
@@ -26,12 +24,7 @@ export default function CSSChanger({ time }: any) {
                         <div className="wave"></div></div>
                 </div>
             </div>
-            <span><main>
-                <h1 id='dawn_welcome'>
-                    <div className='default_text'>Where</div><div id='dawn_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='dawn_functionality'>functionality</div>
-                </h1>
-            </main>
-            </span></>)
+        </>)
     } else if (time >= 9 && time < 19) {
         return (<>
             <div id="background-wrap-day">
@@ -55,12 +48,7 @@ export default function CSSChanger({ time }: any) {
                     <div className="cloud"></div>
                 </div>
             </div>
-            <span><main>
-                <h1 id='day_welcome'>
-                    <div className='default_text'>Where</div><div id='day_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='day_functionality'>functionality</div>
-                </h1>
-            </main>
-            </span>
+
         </>)
     } else if (time >= 19 && time <= 23) {
         return (<>
@@ -70,12 +58,7 @@ export default function CSSChanger({ time }: any) {
                     <div id="dusk2"></div>
                     <div id="dusk3"></div>
                     <div id="dusk4"></div>
-                </div></div><span><main>
-                    <h1 id='dusk_welcome'>
-                        <div className='default_text'>Where</div><div id='dusk_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='dusk_functionality'>functionality</div>
-                    </h1>
-                </main>
-            </span></>)
+                </div></div></>)
     } else {
         return (<>
             <div id="background-wrap-night">
@@ -100,12 +83,7 @@ export default function CSSChanger({ time }: any) {
                     <div className="tree l3" id="tree10"></div>
                     <div className="tree l3" id="tree11"></div>
                     <div className="tree l3" id="tree12"></div>
-                    <span><main>
-                        <h1 id='night_welcome'>
-                            <div className='default_text'>Where</div><div id='night_creativity'>creativity</div> <div className='default_text'>meets</div> <div id='night_functionality'>functionality</div>
-                        </h1>
-                    </main>
-                    </span>
+
                 </div>
 
             </div></>)
