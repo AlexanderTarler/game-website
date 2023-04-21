@@ -1,6 +1,7 @@
 .portfolio {
     display: flex;
     align-items: center;
+    font-size: 130%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -8,5 +9,6 @@
 }
 
 .project_item {
+    font-weight: bold;
     margin-top: 50px;
 }

@@ -1,12 +1,24 @@
-.contact_info {
-    margin-top: 20px;
+.contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    color: #101010;
+}
+
+.contact_info {
+    text-shadow: -3px 2px 0px rgb(75, 4, 118);
+    color: #e9e6f1;
+    margin-top: 20px;
+    display: flex;
+    font-size: 150%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_option {
+
+    color: gold;
     margin-top: 50px;
 }

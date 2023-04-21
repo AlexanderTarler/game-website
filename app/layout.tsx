@@ -1,4 +1,6 @@
 import './globals.css'
+import Navbar from './Navbar'
+import { GlobalContextProvider } from './Context/store'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <GlobalContextProvider>
+          {children}
+        </GlobalContextProvider>
+      </body>
     </html>
   )
 }

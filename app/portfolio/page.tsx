@@ -2,19 +2,17 @@
 import './portfolio.css';
 import Link from 'next/link';
 import CSSChanger from '../RealTimeCSS';
-import Navbar from '../Navbar';
-import { useState } from 'react';
+import { useGlobalContext } from '../Context/store';
 import SceneryChanger from '../Scenery';
 
 const date = new Date();
 const present = date.getHours();
 
 export default function Portfolio() {
-    const [time, setTime] = useState(present);
+    const { time, setTime } = useGlobalContext();
 
     return (
         <>
-            <Navbar />
             <SceneryChanger setTime={setTime} />
 
             <main className='portfolio'>

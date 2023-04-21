@@ -6,21 +6,15 @@ import './time-of-day-css/dawn.css';
 import './time-of-day-css/day.css';
 import CSSChanger from './RealTimeCSS';
 import SceneryChanger from './Scenery';
+import { useGlobalContext } from './Context/store';
 
-
-import Navbar from './Navbar';
-import { useState } from 'react';
-
-const date = new Date();
-const present = date.getHours();
 
 export default function Home() {
-  const [time, setTime] = useState(present);
+  const { time, setTime } = useGlobalContext();
 
 
   return (
     <>
-      <Navbar />
       <SceneryChanger setTime={setTime} />
       <span><main>
         <h1 id='welcome'>

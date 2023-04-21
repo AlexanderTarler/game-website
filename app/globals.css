@@ -12,6 +12,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 /* main {
     margin-top: 50px;
     display: flex;

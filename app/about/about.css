@@ -7,22 +7,9 @@
     color: gold;
 }
 
-h2 {
-    display: flex;
-    /* flex-wrap: wrap; */
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    background-color: #272727;
-    padding: 10px;
-}
-
 .fakeButtons {
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     border: 1px solid #000;
     position: relative;
@@ -46,9 +33,9 @@ body {
 }
 
 .fakeMenu {
-    width: 400px;
+    width: 600px;
     box-sizing: border-box;
-    height: 25px;
+    height: 30px;
     background-color: #bbb;
     margin: 0 auto;
     border-top-right-radius: 5px;
@@ -58,26 +45,50 @@ body {
 .fakeScreen {
     background-color: #151515;
     box-sizing: border-box;
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+#terminal_input {
+    background-color: #151515;
+    border: none;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 1.40em;
+    text-align: left;
+    margin-left: -6px;
+    /* margin-top: 10px; */
+    animation: 6s fadeIn;
+    animation-fill-mode: forwards;
+    width: 380px;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.terminal_answer {
+    color: whitesmoke;
+    font-family: monospace;
+    margin-left: -6px;
+    margin-top: 10px;
+    font-size: 130%;
+}
+
 p {
     position: relative;
-    top: -10%;
-    margin-bottom: 10px;
-    left: 35%;
+    left: 25.5%;
     margin-left: -8.5em;
+    margin-bottom: 10px;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1.40em;
     font-family: monospace;
-    white-space: normal;
+    white-space: nowrap;
     overflow: hidden;
     width: 0;
+    /* overflow-wrap: break-word; */
 }
 
 span {
@@ -85,19 +96,46 @@ span {
     font-weight: bold;
 }
 
+.keyword {
+    color: #E09690;
+    background-color: #151515;
+    border: none;
+    font-family: monospace;
+    font-size: 100%;
+    text-decoration: underline;
+}
+
+.keyword:hover {
+    color: gold;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    font-family: monospace;
+    margin-left: -7px;
+    margin-bottom: 10px;
+    width: 100px;
+    background-color: #151515;
+    font-size: large;
+}
+
 .line1 {
     color: #9CD9F0;
-    -webkit-animation: type .5s 1s steps(20, end) forwards;
-    -moz-animation: type .5s 1s steps(20, end) forwards;
-    -o-animation: type .5s 1s steps(20, end) forwards;
-    animation: type .5s 1s steps(20, end) forwards;
+    -webkit-animation: type .5s 0.5s steps(20, end) forwards;
+    -moz-animation: type .5s 0.5s steps(20, end) forwards;
+    -o-animation: type .5s 0.5s steps(20, end) forwards;
+    animation: type .5s 0.5s steps(20, end) forwards;
 }
 
 .cursor1 {
-    -webkit-animation: blink 1s 1.5s 2 forwards;
-    -moz-animation: blink 1s 1.5s 2 forwards;
-    -o-animation: blink 1s 1.5s 2 forwards;
-    animation: blink 1s 1.5s 2 forwards;
+    -webkit-animation: blink 1s 1s 2 forwards;
+    -moz-animation: blink 1s 1s 2 forwards;
+    -o-animation: blink 1s 1s 2 forwards;
+    animation: blink 1s 1s 2 forwards;
 }
 
 .line2 {
@@ -117,17 +155,17 @@ span {
 
 .line3 {
     color: #E09690;
-    -webkit-animation: type .5s 5s steps(20, end) forwards;
-    -moz-animation: type .5s 5s steps(20, end) forwards;
-    -o-animation: type .5s 5s steps(20, end) forwards;
-    animation: type .5s 5s steps(20, end) forwards;
+    -webkit-animation: type .5s 5.5s steps(20, end) forwards;
+    -moz-animation: type .5s 5.5s steps(20, end) forwards;
+    -o-animation: type .5s 5.5s steps(20, end) forwards;
+    animation: type .5s 5.5s steps(20, end) forwards;
 }
 
 .cursor3 {
-    -webkit-animation: blink 1s 8.5s 2 forwards;
-    -moz-animation: blink 1s 8.5s 2 forwards;
-    -o-animation: blink 1s 8.5s 2 forwards;
-    animation: blink 1s 8.5s 2 forwards;
+    -webkit-animation: blink 1s 6s 2 forwards;
+    -moz-animation: blink 1s 6s 2 forwards;
+    -o-animation: blink 1s 6s 2 forwards;
+    animation: blink 1s 6s 2 forwards;
 }
 
 .line4 {
@@ -143,6 +181,17 @@ span {
     -moz-animation: blink 1s 8.5s infinite;
     -o-animation: blink 1s 8.5s infinite;
     animation: blink 1s 8.5s infinite;
+}
+
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+
+    }
 }
 
 @-webkit-keyframes blink {
@@ -235,24 +284,24 @@ span {
 
 @-webkit-keyframes type {
     to {
-        width: 17em;
+        width: 50em;
     }
 }
 
 @-moz-keyframes type {
     to {
-        width: 17em;
+        width: 50em;
     }
 }
 
 @-o-keyframes type {
     to {
-        width: 17em;
+        width: 50em;
     }
 }
 
 @keyframes type {
     to {
-        width: 17em;
+        width: 50em;
     }
 }
