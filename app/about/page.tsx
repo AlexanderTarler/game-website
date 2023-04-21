@@ -74,7 +74,7 @@ export default function Home() {
                 </div>
                 <div className="fakeScreen">
                     <p className="line1">Hi there!<span className="cursor1">_</span></p>
-                    <p className="line2">I'm Alex, a fullstack developer with a passion for coding.<span className="cursor2">_</span></p>
+                    <p className="line2">I&apos;m Alex, a fullstack developer with a passion for coding.<span className="cursor2">_</span></p>
                     <p className="line3">Enter a <button className='keyword' onClick={handleClick}>keyword</button> to find out more about me!<span className="cursor3">_</span></p>
                     <div className={visible ? 'invisible' : 'visible'}>
                         Skills
