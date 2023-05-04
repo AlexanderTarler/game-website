@@ -20,6 +20,10 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
+    "@types/sass": "^1.45.0",
+    "@types/webpack": "^5.28.1",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
     "typescript": "^5.0.4"
   }
 }

@@ -20,6 +20,8 @@ export default function CSSChanger({ time }: any) {
                     <div className="sun"></div>
                     <div className="bird"></div>
                     <div className="birdr"></div>
+                    <div className="bird1"></div>
+                    <div className="birdr1"></div>
                     <div className="fin">
                         <div className="wave"></div></div>
                 </div>

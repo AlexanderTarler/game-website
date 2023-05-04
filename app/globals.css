@@ -12,18 +12,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-body {
-    height: 100vh;
-}
-
-/* main {
-    margin-top: 50px;
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-    color: #e1ddea;
-} */
-
 .scenery {
     display: flex;
     flex-direction: row;
@@ -39,11 +27,12 @@ body {
     cursor: pointer;
 }
 
+.underlined {
+    color: rgb(255, 255, 255);
+}
 
-
-.dawn {
+#dawn {
     display: block;
-    /* position: relative; */
     box-sizing: border-box;
     transform: scale(var(--ggs, 1));
     width: 20px;
@@ -52,8 +41,8 @@ body {
     border-radius: 100px
 }
 
-.dawn::after,
-.dawn::before {
+#dawn::after,
+#dawn::before {
     content: "";
     display: block;
     box-sizing: border-box;
@@ -63,10 +52,9 @@ body {
     transform: rotate(-90deg);
     background: currentColor;
     top: -14px;
-    /* left: 4px */
 }
 
-.dawn::after {
+#dawn::after {
     width: 2px;
     box-shadow:
         -3px 4px 0 0,
@@ -75,7 +63,7 @@ body {
     left: 6px
 }
 
-.day {
+#day {
     box-sizing: border-box;
     position: relative;
     display: block;
@@ -97,8 +85,8 @@ body {
     border: 6px solid transparent
 }
 
-.day::after,
-.day::before {
+#day::after,
+#day::before {
     content: "";
     display: block;
     box-sizing: border-box;
@@ -111,27 +99,27 @@ body {
     top: 5px
 }
 
-.day::before {
+#day::before {
     transform: rotate(-45deg)
 }
 
-.day::after {
+#day::after {
     transform: rotate(45deg)
 }
 
-.dusk {
+#dusk_button {
     font-size: 200%;
     margin-top: -14px;
 }
 
-.night,
-.night::after {
+#night,
+#night::after {
     display: block;
     box-sizing: border-box;
     border-radius: 50%
 }
 
-.night {
+#night {
     overflow: hidden;
     position: relative;
     transform: rotate(-135deg) scale(var(--ggs, 1));
@@ -141,7 +129,7 @@ body {
     border-bottom-color: transparent
 }
 
-.night::after {
+#night::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -151,10 +139,6 @@ body {
     top: 8px;
     left: 2px;
 }
-
-
-
-
 
 #welcome {
     margin-top: 80px;

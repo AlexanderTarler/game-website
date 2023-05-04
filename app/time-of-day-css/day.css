@@ -17,10 +17,11 @@
 
 #day_welcome {
     margin-top: 95px;
-    margin-left: -30px;
+    margin-left: 20px;
     width: 425px;
     font-size: 120%;
-    color: rgb(255, 255, 255);
+    color: rgb(51, 51, 155);
+
     text-shadow: -2px 2px 2px gold;
     z-index: 61;
 }
@@ -198,26 +199,190 @@
     }
 
     #day_welcome {
-        margin-top: 50px;
-        font-size: xx-large;
-        color: rgb(255, 255, 255);
-        text-shadow: -2px 2px 2px gold;
-        z-index: 2;
+        margin-top: 26px;
+        font-size: 200%;
     }
 
     #day_creativity {
-        color: gold;
-        text-shadow: none;
-        font-family: 'Bungee Shade', sans-serif;
         font-size: 200%;
     }
 
     #day_functionality {
         margin-top: 50px;
-        color: silver;
-        font-family: 'Press Start 2P', sans-serif;
         font-size: 200%;
-        text-shadow: none;
+    }
+
+    /* KEYFRAMES */
+
+    @-webkit-keyframes animateCloud {
+        0% {
+            margin-left: -1000px;
+        }
+
+        100% {
+            margin-left: 100%;
+        }
+    }
+
+    @-moz-keyframes animateCloud {
+        0% {
+            margin-left: -1000px;
+        }
+
+        100% {
+            margin-left: 100%;
+        }
+    }
+
+    @keyframes animateCloud {
+        0% {
+            margin-left: -1000px;
+        }
+
+        100% {
+            margin-left: 100%;
+        }
+    }
+
+    /* ANIMATIONS */
+
+    .x1 {
+        -webkit-animation: animateCloud 35s linear infinite;
+        -moz-animation: animateCloud 35s linear infinite;
+        animation: animateCloud 35s linear infinite;
+
+        -webkit-transform: scale(0.65);
+        -moz-transform: scale(0.65);
+        transform: scale(0.65);
+    }
+
+    .x2 {
+        -webkit-animation: animateCloud 20s linear infinite;
+        -moz-animation: animateCloud 20s linear infinite;
+        animation: animateCloud 20s linear infinite;
+
+        -webkit-transform: scale(0.3);
+        -moz-transform: scale(0.3);
+        transform: scale(0.3);
+    }
+
+    .x3 {
+        -webkit-animation: animateCloud 30s linear infinite;
+        -moz-animation: animateCloud 30s linear infinite;
+        animation: animateCloud 30s linear infinite;
+
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    .x4 {
+        -webkit-animation: animateCloud 18s linear infinite;
+        -moz-animation: animateCloud 18s linear infinite;
+        animation: animateCloud 18s linear infinite;
+
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        transform: scale(0.4);
+    }
+
+    .x5 {
+        -webkit-animation: animateCloud 25s linear infinite;
+        -moz-animation: animateCloud 25s linear infinite;
+        animation: animateCloud 25s linear infinite;
+
+        -webkit-transform: scale(0.55);
+        -moz-transform: scale(0.55);
+        transform: scale(0.55);
+    }
+
+    /* OBJECTS */
+
+    .cloud {
+        background: #fff;
+        background: -moz-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(100%, #f1f1f1));
+        background: -webkit-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+        background: -o-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+        background: -ms-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+        background: linear-gradient(top, #fff 5%, #f1f1f1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f1f1f1', GradientType=0);
+
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+
+        -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+        height: 120px;
+        position: relative;
+        width: 350px;
+    }
+
+    .cloud:after,
+    .cloud:before {
+        background: #fff;
+        content: '';
+        position: absolute;
+        z-indeX: -1;
+    }
+
+    .cloud:after {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+
+        height: 100px;
+        left: 50px;
+        top: -50px;
+        width: 100px;
+    }
+
+    .cloud:before {
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        border-radius: 200px;
+
+        width: 180px;
+        height: 180px;
+        right: 50px;
+        top: -90px;
+    }
+}
+
+@media only screen and (min-width: 1422px) {
+    #background-wrap-day {
+        background: #00b4ff;
+        color: #333;
+        font: 100% Arial, Sans Serif;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        bottom: 0;
+        left: 0;
+        padding-top: 50px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    #day_welcome {
+        margin-top: 200px;
+
+        font-size: 300%;
+    }
+
+    #day_creativity {
+        font-size: 200%;
+    }
+
+    #day_functionality {
+        margin-top: 50px;
+        font-size: 200%;
     }
 
     /* KEYFRAMES */

@@ -17,7 +17,7 @@ export default function Portfolio() {
 
             <main className='portfolio'>
                 <h1>Projects</h1>
-                <Link className='project_item' href={'https://cv-creator-three.vercel.app/'}>
+                <Link className='project_item' href={'https://cv-creator-nine.vercel.app/'}>
                     Cv Creator
                 </Link>
             </main>
