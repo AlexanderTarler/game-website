@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import { GlobalContextProvider } from './Context/store'
 
 export const metadata = {
-  title: 'Code With Alex',
+  title: 'Alexander Tarler',
   description: 'A portfolio website by Alexander Tarler',
 }
 

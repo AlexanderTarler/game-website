@@ -24,16 +24,20 @@ export default function Home() {
     }, [])
 
     const handleChange = (event: any) => {
-        setQuery(event.target.value);
+        setQuery((event.target.value).toLowerCase());
     };
 
     const handleKeyDown = (event: any) => {
         if (event.key === 'Enter') {
-            if (query === 'Skills') {
+            if (query === 'keywords') {
+                queryRef.current!.value = '';
+                setAnswer('Skills, Hobbies');
+                setQuery('');
+            } else if (query === 'skills') {
                 queryRef.current!.value = '';
                 setAnswer('React, NextJS, Node');
                 setQuery('');
-            } else if (query === 'Hobbies') {
+            } else if (query === 'hobbies') {
                 queryRef.current!.value = '';
                 setAnswer('TTRPGs, coding, fitness, baking');
                 setQuery('');
@@ -75,7 +79,7 @@ export default function Home() {
                 <div className="fakeScreen">
                     <p className="line1">Hi there!<span className="cursor1">_</span></p>
                     <p className="line2">I&apos;m Alex, a fullstack developer with a passion for coding.<span className="cursor2">_</span></p>
-                    <p className="line3">Enter a <button className='keyword' onClick={handleClick}>keyword</button> to find out more about me!<span className="cursor3">_</span></p>
+                    <p className="line3">Enter "keywords" below to find out what else you can type!<span className="cursor3">_</span></p>
                     <div className={visible ? 'invisible' : 'visible'}>
                         Skills
                         Hobbies
