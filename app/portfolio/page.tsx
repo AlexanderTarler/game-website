@@ -1,19 +1,17 @@
 'use client'
+import '../globals.css';
 import './portfolio.css';
 import Link from 'next/link';
 import CSSChanger from '../RealTimeCSS';
 import { useGlobalContext } from '../Context/store';
 import SceneryChanger from '../Scenery';
 
-const date = new Date();
-const present = date.getHours();
-
 export default function Portfolio() {
     const { time, setTime } = useGlobalContext();
 
     return (
         <>
-            <SceneryChanger setTime={setTime} />
+            <SceneryChanger time={time} setTime={setTime} />
 
             <main className='portfolio'>
                 <h1>Projects</h1>

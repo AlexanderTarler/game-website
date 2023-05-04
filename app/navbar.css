@@ -31,6 +31,7 @@ header {
 nav {
     display: flex;
     padding: 10px;
+    margin-bottom: 10px;
     justify-content: space-between;
     align-items: center;
     background: transparent;
@@ -59,7 +60,8 @@ nav {
     position: fixed;
     top: 40px;
     width: 90px;
-    row-gap: 24px;
+    row-gap: 12px;
+    margin-top: 15px;
     right: -100px;
     padding: 24px 16px;
     transition: all 0.2s;

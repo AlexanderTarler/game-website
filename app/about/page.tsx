@@ -1,10 +1,10 @@
 'use client'
+import '../globals.css';
 import './about.css';
 import CSSChanger from '../RealTimeCSS'
 import { useGlobalContext } from '../Context/store';
 import { useEffect, useRef, useState } from 'react';
 import SceneryChanger from '../Scenery';
-import Link from 'next/link';
 
 
 
@@ -65,7 +65,7 @@ export default function Home() {
 
     return (
         <>
-            <SceneryChanger setTime={setTime} />
+            <SceneryChanger time={time} setTime={setTime} />
             <main className='about'>
                 <div className='fakeMenu'>
                     <div className="fakeButtons fakeClose"></div>

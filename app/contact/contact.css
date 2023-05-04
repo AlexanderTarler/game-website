@@ -20,3 +20,10 @@
     color: gold;
     margin-top: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        /* width: 300px; */
+        font-size: 70%;
+    }
+}

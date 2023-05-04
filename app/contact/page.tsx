@@ -1,4 +1,5 @@
 'use client'
+import '../globals.css';
 import Link from 'next/link';
 import './contact.css';
 import { useGlobalContext } from '../Context/store';
@@ -11,7 +12,7 @@ export default function Home() {
     const { time, setTime } = useGlobalContext();
     return (
         <>
-            <SceneryChanger setTime={setTime} />
+            <SceneryChanger time={time} setTime={setTime} />
             <div className='contact'>
                 <main className='contact_info'>
                     <h1>Contact info</h1>
